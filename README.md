@@ -1,5 +1,5 @@
 # sdar_changepoints
-Sequentially Discounting Autoregressive time series model and change point detection scheme
+Sequentially Discounting Autoregressive time series model and change point detection schemes.
 
 Software for algorithms presented in "A unifying framework for detecting outliers and change points from time series" Takeuchi
 and Yamanishi, 2006.
