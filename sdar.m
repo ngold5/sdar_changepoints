@@ -29,7 +29,6 @@ x0 = zeros(N, 1);
 
 % Initialization
 mu0 = 1 / (N -k) * sum(x(k+1:N));
-mue = mu0;
 for j = 1:k
 	C0(j,1) = 1 / (N - k) * sum((x(k+1:N) - mu0) .* (x(k+1-j:N-j) - mu0)); % C_1,...,C_k
 end
@@ -43,7 +42,6 @@ A = M \ C0;
 
 % Compute Sigma
 Sigm = C00 - sum(A .* C0);
-Sigme = Sigm;
 x0 = x(1:k);
 
 % Compute parameters
